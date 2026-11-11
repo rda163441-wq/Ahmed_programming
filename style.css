@@ -351,11 +351,17 @@ header {
 }
 
 .project-card {
+    display: block;
     background: var(--card);
     border: 1px solid #26364b;
     border-radius: 12px;
     overflow: hidden;
     transition: .3s;
+}
+
+.project-card:focus-visible {
+    outline: 2px solid var(--main);
+    outline-offset: 4px;
 }
 
 .project-card:hover {
@@ -544,4 +550,15 @@ footer > a:last-child {
         flex-direction: column;
         text-align: center;
     }
+    .skill-icon.cpp {
+    background: #00599c;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
 }
+.skill-icon.arduino {
+    background: #00979d;
+    color: white;
+    font-size: 38px;
+    font-weight: bold;
+}}
